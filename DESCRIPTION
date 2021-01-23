@@ -14,12 +14,12 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Suggests: 
-    learnr
 Imports: 
     gradethis (>= 0.2.0.9001),
     parsons (>= 0.0.3.9000),
-    flashCard (>= 0.1.0)
-Remotes: 
+    flashCard (>= 0.1.0),
+    learnr (>= 0.10.1.9007)
+Remotes:  
     rstudio-education/gradethis,
-    rstudio/parsons
+    rstudio/parsons,
+    rstudio/learnr
