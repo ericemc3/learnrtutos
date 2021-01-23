@@ -1,0 +1,205 @@
+/******
+Allison custom css for exploring missingness tutorial
+*******/
+:root {
+  --color-title: #1e9b9e;
+  --color-bg-topics: #F1A027;
+  --color-bg-topics-l: #F8CA87;
+  --color-bg-bt-base: #1e9b9e;
+  --color-bg-bt-dark: #1B8F8F;
+}
+
+body {
+  background-color: #ffffff;
+  /*font-size: 14px;*/
+  margin-top: 6px ;
+}
+
+h4.date em, h4.author em {
+  font-size: 12px ;
+  font-style: italic !important;
+  color: #999;
+}
+
+h4.date  {
+  margin-top: -6px !important;
+}
+
+h2.tutorialTitle {
+  margin-bottom:0px;
+}
+
+#tutorial-topic:before { 
+  content: url(img/logo-icem7-100.png) ;
+  position: relative; 
+
+}
+.pageContent .topics {
+  overflow-x: hidden;
+}
+/*em {
+    color: slategrey;
+}*/
+
+.ace-tm {
+    background-color: #ffffff;
+    color: black;
+}
+.ace-tm .ace_comment {
+    color: #996666;
+}
+
+
+.panel, pre {
+    border-radius: 0;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+}
+
+.panel-default > .panel-heading {
+    color: #555555;
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+.topicsList .topic {
+    line-height: 150%;
+    font-size: 16px;
+    padding-left: 10px;
+    padding: 5px 0 5px 10px ;
+    border-bottom: 1px solid var(--color-bg-topics-l);
+}
+
+.topicsList .topic.current {
+    /*background-color: var(--color-bg-topics);
+    color: #ffffff;
+    border: 0px;*/
+}
+
+.topicsFooter .resetButton {
+    padding-left: 10px;
+    font-size: 0.9em ;
+    font-style: italic;
+    color: var(--color-title);
+    opacity: 1;
+}
+
+code {
+    color: gray;
+    background-color: #ffecdd;
+    font-size: 12px;
+}
+
+a {
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    color: var(--color-title);
+    text-decoration: none;
+}
+
+.btn, .btn-primary, .btn-success, .btn-info {
+    color: #ffffff;
+    background-color: var(--color-bg-bt-base);
+    background-image: none;
+    border: none;
+    
+    opacity: 0.9;
+    
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+.btn-primary.disabled, .btn-primary:disabled, .btn-primary.disabled:hover, .btn-primary:disabled:hover, .btn-success.disabled, .btn-success:disabled, .btn-success.disabled:hover, .btn-success:disabled:hover, .btn-info.disabled, .btn-info:disabled, .btn-info.disabled:hover, .btn-info:disabled:hover {
+      background-color: var(--color-bg-bt-base);
+}
+
+.btn-primary:hover, .btn-default:hover, .btn:hover {
+      background-color: var(--color-bg-bt-base) !important;
+      color: white;
+      opacity: 1;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:focus:active, .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success:focus:active, .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info:focus:active {
+        background-color: var(--color-bg-bt-base) !important;
+}
+
+.btn-default {
+    color: #ffffff;
+    background-color: var(--color-title);
+    background-image: none;
+    border: none;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+.flashcard_div h2 {
+  color: var(--color-bg-topics) ;
+}
+
+h2 {
+  /*color: var(--color-bg-topics);*/
+  /*font-family: 'Roboto Slab', serif;*/
+}
+
+h2.tutorialTitle {
+    color: var(--color-bg-topics);
+}
+
+h3 {
+  color: var(--color-title);
+  /*font-family: 'Roboto Slab', serif;*/
+}
+
+h4 {
+  color: var(--color-title);
+  /*font-family: 'Roboto Slab', serif;*/
+}
+
+h5 {
+    color: darkvar(--color-bg-bt-base);
+    background-color: white;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.ace-tm .ace_string {
+    color: var(--color-title);
+}
+
+.flash-card-back {
+  border: var(--color-bg-bt-base) 1px solid !important ;
+  background-color: white !important;
+}
+
+.flash-card-back p {
+  color: black;
+}
+
+.flash-card-front {
+  background: var(--color-bg-bt-dark) !important;
+}
+
+/* parsons */
+.rank-list-item.sortable-chosen {
+    background-color: var(--color-bg-topics-l) !important;
+}
+.rank-list-item.sortable-ghost {
+    background-color: var(--color-bg-topics-l) !important;
+}
+.rank-list-item.sortable-ghost.sortable-chosen {
+   background-color: var(--color-bg-topics-l) !important;
+}
+.rank-list-item.sortable-drag {
+    background-color: var(--color-bg-topics-l) !important;
+    border: 1px solid var(--color-bg-topics) !important;
+}
+.rank-list-item.sortable-drag:hover:not(.disabled) {
+   background-color: var(--color-bg-topics-l) !important;
+}
+
+.rank-list-item .rank-list-item-internal:hover:not(.disabled) {
+    border-color: var(--color-bg-topics) !important;
+}
+
+/*.alert-danger {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: blue ;
+}       */ 
